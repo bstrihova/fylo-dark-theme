@@ -1,0 +1,23 @@
+.intro {
+  padding: 2 * $padding;
+  background-color: $bg-intro-email;
+  background-image: url("../img/bg-curvy-mobile.svg");
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    // padding: 0 (2 * $padding);
+    margin: ($margin) 0 (2 * $margin) 0;
+  }
+}
+
+.btn--intro {
+  width: 70vw;
+  padding: 0.8 * $padding (5 * $padding);
+  font-size: 90%;
+}

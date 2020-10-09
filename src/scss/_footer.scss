@@ -5,3 +5,57 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+footer {
+  background-color: $bg-footer;
+}
+
+.footer {
+  margin-top: 15em;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+
+  &__logo {
+    margin-bottom: 2 * $margin;
+  }
+
+  .contactinfo {
+    margin-bottom: 2 * $margin;
+    &__section {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 2 * $margin;
+
+      &__text {
+        width: 80%;
+        text-align: left;
+        margin: 0;
+      }
+    }
+    &__icon {
+      max-width: 20%;
+      height: 20%;
+      margin-right: $margin;
+      align-self: center;
+    }
+  }
+}
+
+.social {
+  width: 100%;
+  margin: $margin * 2 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    border-radius: 50%;
+    border: 0.2px white solid;
+    padding: 5px;
+    width: 2em;
+    margin-right: $margin;
+    background-color: transparent;
+  }
+}

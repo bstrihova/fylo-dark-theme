@@ -1,0 +1,12 @@
+.features {
+  margin-top: 5 * $margin;
+
+  .feature {
+    margin-bottom: 5 * $margin;
+
+    &__text {
+      // padding: 0 (2 * $padding);
+      margin: (2 * $margin) 0 (3 * $margin) 0;
+    }
+  }
+}

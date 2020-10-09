@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./img/favicon-32x32.png"
     />
 
     <title>Fylo landing page with dark theme and features grid</title>
@@ -21,13 +21,13 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <img class="header__logo" src="img/logo.svg" alt="company logo" />
-      <nav class="header__nav">
-        <ul>
-          <li><a href="#" class="header__nav__item">Features</a></li>
-          <li><a href="#" class="header__nav__item">Team</a></li>
-          <li><a href="#" class="header__nav__item">Sign In</a></li>
+      <nav class="nav nav--header">
+        <ul class="nav__ul nav__ul--header">
+          <li><a href="#" class="nav__item nav__item--header">Features</a></li>
+          <li><a href="#" class="nav__item nav__item--header">Team</a></li>
+          <li><a href="#" class="nav__item nav__item--header">Sign In</a></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +49,9 @@
           family, and co-workers.
         </p>
 
-        <a href="#" class="intro__button">Get Started</a>
+        <a href="" class="btn btn--intro" onclick="showsomething()"
+          >Get Started</a
+        >
       </section>
       <section class="features">
         <div class="feature">
@@ -107,17 +109,17 @@
         <img
           src="img/illustration-stay-productive.png"
           alt="stay productive illustration"
-          class="promotion__illustration"
+          class="promotion__img"
         />
         <div class="promotion__rightcolumn">
           <h2>Stay productive, wherever you are</h2>
 
-          <p>
+          <p class="promotion__text promotion__text--top">
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
           </p>
 
-          <p>
+          <p class="promotion__text promotion__text--bottom">
             Securely share files and folders with friends, family and colleagues
             for live collaboration. No email attachments required.
           </p>
@@ -136,7 +138,7 @@
           </p>
           <div class="review__profile">
             <img src="img/profile-1.jpg" alt="guy" />
-            <div class="review__name">
+            <div class="review__profile__name">
               <h3>Satish Patel</h3>
               <p>Founder & CEO, Huddle</p>
             </div>
@@ -150,7 +152,7 @@
           </p>
           <div class="review__profile">
             <img src="img/profile-2.jpg" alt="guy" />
-            <div class="review__name">
+            <div class="review__profile__name">
               <h3>Bruce McKenzie</h3>
               <p>Founder & CEO, Huddle</p>
             </div>
@@ -165,14 +167,13 @@
           </p>
           <div class="review__profile">
             <img src="img/profile-3.jpg" alt="lady" />
-            <div class="review__name">
+            <div class="review__profile__name">
               <h3>Iva Boyd</h3>
               <p>Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
       </section>
-
       <section class="earlyaccess">
         <h2>Get early access today</h2>
 
@@ -186,56 +187,85 @@
             type="email"
             name="email"
             id="email"
+            class="earlyaccess__input"
             placeholder="email@example.com"
           />
 
-          <a href="#" class="earlyaccess__btn"> Get Started For Free</a>
+          <a href="#" class="btn btn--earlyaccess"> Get Started For Free</a>
         </div>
       </section>
     </main>
     <footer>
-      <img src="img/logo.svg" alt="fylo logo" class="footer__logo" />
-      <section class="contactinfo">
-        <div class="contactinfo__location">
-          <img src="img/icon-location.svg" alt="map tick icon" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-        <div class="contactinfo__phone">
-          <img src="img/icon-phone.svg" alt="phone icon" />
-          <p>+1-543-123-4567</p>
-        </div>
-        <div class="contactinfo__email">
-          <img src="img/icon-email.svg" alt="email icon" />
-          <p>example@fylo.com</p>
-        </div>
-      </section>
-      <nav class="footer__nav">
-        <ul>
-          <li><a href="#" class="footer__nav__item">About Us</a></li>
-          <li><a href="#" class="footer__nav__item">Jobs</a></li>
-          <li><a href="#" class="footer__nav__item">Press</a></li>
-          <li><a href="" class="footer__nav__item">Blog</a></li>
-        </ul>
-        <ul>
-          <li><a href="#" class="footer__nav__item">Contact Us</a></li>
-          <li><a href="#" class="footer__nav__item">Terms</a></li>
-          <li><a href="#" class="footer__nav__item">Privacy</a></li>
-        </ul>
-      </nav>
-      <section class="social">
-        <img src="" alt="fb" />
-        <img src="" alt="twitter" />
-        <img src="" alt="ig" />
-      </section>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div class="footer">
+        <img src="img/logo.svg" alt="fylo logo" class="footer__logo" />
+        <section class="contactinfo">
+          <div class="contactinfo__section">
+            <img
+              src="img/icon-location.svg"
+              alt="map tick icon"
+              class="contactinfo__icon"
+            />
+            <p class="contactinfo__section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+          <div class="contactinfo__section">
+            <img
+              src="img/icon-phone.svg"
+              alt="phone icon"
+              class="contactinfo__icon"
+            />
+            <p class="contactinfo__section__text">+1-543-123-4567</p>
+          </div>
+          <div class="contactinfo__section">
+            <img
+              src="img/icon-email.svg"
+              alt="email icon"
+              class="contactinfo__icon"
+            />
+            <p class="contactinfo__section__text">example@fylo.com</p>
+          </div>
+        </section>
+        <nav class="nav nav--footer">
+          <ul class="nav__ul nav__ul--footer">
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">About Us</a>
+            </li>
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">Jobs</a>
+            </li>
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">Press</a>
+            </li>
+            <li class="nav__li--footer">
+              <a href="" class="nav__item nav__item--footer">Blog</a>
+            </li>
+          </ul>
+          <ul class="nav__ul nav__ul--footer">
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">Contact Us</a>
+            </li>
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">Terms</a>
+            </li>
+            <li class="nav__li--footer">
+              <a href="#" class="nav__item nav__item--footer">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="social">
+          <img src="img/fb.svg" alt="fb" />
+          <img src="img/twitter.svg" alt="twitter" />
+          <img src="img/instagram.svg" alt="ig" />
+        </section>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/bstrihova">bstrihova</a>.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

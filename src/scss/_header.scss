@@ -1,18 +1,14 @@
-header {
+.header {
   display: flex;
-  width: 100vw;
-  margin: auto;
-  justify-content: space-between;
-  padding: $padding;
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
-      a {
-        padding: $padding;
-        color: white;
-        text-decoration: none;
-      }
-    }
+  flex-direction: row;
+  background-color: $bg-intro-email;
+  align-items: center;
+  padding: $padding 0.5 * $padding;
+
+  &__logo {
+    min-width: 30%;
+    max-width: 30%;
+    // flex-grow: 1;
+    flex-shrink: 1;
   }
 }

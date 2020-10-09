@@ -1,5 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: hsl(217, 28%, 15%);
+  background-color: $bg-main;
   color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.earlyaccess,
+.features,
+header,
+footer,
+.intro,
+.promotion,
+.reviews {
+  // width: 100vw;
+  margin: auto;
+  padding: $padding;
+}
+
+h1,
+h2,
+h3,
+h4,
+header nav {
+  font-family: $font-family;
+}
+
+.btn {
+  background: linear-gradient(
+    196deg,
+    $call-to-action-cyan 0%,
+    $call-to-action-blue 100%
+  );
+  border-radius: 2em;
+  color: $white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: $font-family;
 }

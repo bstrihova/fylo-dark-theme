@@ -1,0 +1,40 @@
+.earlyaccess {
+  background-color: $bg-intro-email;
+  border-radius: 7px;
+  padding: $padding;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5 * $margin;
+  margin-bottom: -12em;
+  position: relative;
+
+  &__emailform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border-radius: 4em;
+    padding: 1.6 * $padding;
+    font-size: 0.6em;
+    border: none;
+    text-decoration: none;
+    font-family: $font-family;
+    outline: none;
+    margin-bottom: $margin;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: lightslategray;
+    }
+  }
+}
+
+.btn--earlyaccess {
+  width: 70vw;
+  padding: 1.5 * $padding (4 * $padding);
+  font-size: 60%;
+}

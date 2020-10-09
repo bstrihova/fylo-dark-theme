@@ -1,0 +1,53 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 70%;
+  background-image: url("../img/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: 3em;
+  background-position-x: 3em + $padding;
+  margin-top: 5 * $margin;
+  padding-left: 2 * $padding;
+  padding-right: 2 * $padding;
+
+  .review {
+    padding: $padding;
+    margin: $margin;
+    background-color: $bg-reviews;
+
+    border-radius: 7px;
+    -webkit-box-shadow: -1px 1px 2px 2px $bg-intro-email;
+    -moz-box-shadow: -1px 1px 2px 2px $bg-intro-email;
+    box-shadow: -1px 1px 2px 2px $bg-intro-email;
+
+    &__profile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__name {
+        h3,
+        p {
+          margin: 0;
+          margin-top: 0.2 * $margin;
+        }
+
+        h3 {
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 75%;
+        }
+      }
+
+      img {
+        border-radius: 50%;
+        min-width: 10%;
+        max-width: 10%;
+        margin-right: $margin;
+      }
+    }
+  }
+}
