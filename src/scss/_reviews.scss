@@ -11,6 +11,15 @@
   padding-left: 2 * $padding;
   padding-right: 2 * $padding;
 
+  @media (min-width: $mobile) {
+    flex-direction: row;
+    font-size: 90%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 90%;
+  }
+
   .review {
     padding: $padding;
     margin: $margin;
@@ -47,6 +56,11 @@
         min-width: 10%;
         max-width: 10%;
         margin-right: $margin;
+
+        @media (min-width: $mobile) {
+          min-width: 20%;
+          max-width: 20%;
+        }
       }
     }
   }

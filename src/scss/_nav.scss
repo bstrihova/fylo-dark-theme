@@ -2,6 +2,16 @@
   min-width: 70%;
   max-width: 70%;
 
+  &--footer {
+    @media (min-width: $mobile) {
+      display: flex;
+      justify-content: space-evenly;
+      min-width: auto;
+      max-width: auto;
+      width: 40%;
+    }
+  }
+
   &__li--footer {
     margin-bottom: $margin;
   }
@@ -12,6 +22,10 @@
 
     &--header {
       padding: 0.5 * $padding;
+
+      @media (min-width: $mobile) {
+        padding: 0 2 * $padding;
+      }
     }
   }
 
@@ -24,6 +38,10 @@
       display: flex;
       justify-content: flex-end;
       font-size: 80%;
+
+      @media (min-width: $mobile) {
+        font-size: 100%;
+      }
     }
 
     &--footer {

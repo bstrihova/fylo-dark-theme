@@ -10,9 +10,27 @@
   margin-bottom: -12em;
   position: relative;
 
+  @media (min-width: $mobile) {
+    width: 80%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 60%;
+  }
+
   &__emailform {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-top: $margin;
+    }
   }
 
   &__input {
@@ -24,6 +42,12 @@
     font-family: $font-family;
     outline: none;
     margin-bottom: $margin;
+    width: 80%;
+
+    @media (min-width: $mobile) {
+      width: 55%;
+    }
+
     &:focus {
       outline: none;
     }
@@ -34,7 +58,15 @@
 }
 
 .btn--earlyaccess {
-  width: 70vw;
+  width: 80%;
   padding: 1.5 * $padding (4 * $padding);
   font-size: 60%;
+
+  @media (min-width: $mobile) {
+    width: 60%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 40%;
+  }
 }

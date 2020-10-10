@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  width: 100%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -8,6 +9,9 @@
 
 footer {
   background-color: $bg-footer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -15,15 +19,51 @@ footer {
   padding: $padding;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
 
-  &__logo {
-    margin-bottom: 2 * $margin;
+  @media (min-width: $mobile) {
+    justify-content: center;
+  }
+  @media (min-width: $tablet) {
+    width: 90%;
+  }
+
+  &__bigcontainer {
+    @media (min-width: $tablet) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__container {
+    @media (min-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 60%;
+
+      &--tablet {
+        display: flex;
+      }
+    }
+  }
+
+  &__logo__container {
+    width: 0;
+
+    &__img {
+      margin-bottom: 2 * $margin;
+      text-align: left;
+    }
   }
 
   .contactinfo {
-    margin-bottom: 2 * $margin;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      align-items: baseline;
+    }
+
     &__section {
       display: flex;
       align-items: baseline;
@@ -33,6 +73,10 @@ footer {
         width: 80%;
         text-align: left;
         margin: 0;
+
+        @media (min-width: $mobile) {
+          width: 100%;
+        }
       }
     }
     &__icon {
@@ -57,5 +101,10 @@ footer {
     width: 2em;
     margin-right: $margin;
     background-color: transparent;
+  }
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin: 0;
   }
 }

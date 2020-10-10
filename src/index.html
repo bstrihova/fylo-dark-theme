@@ -33,25 +33,27 @@
     </header>
     <main>
       <section class="intro">
-        <img
-          src="img/illustration-intro.png"
-          alt="fylo main illustration"
-          class="intro__img"
-        />
+        <div class="intro__container">
+          <img
+            src="img/illustration-intro.png"
+            alt="fylo main illustration"
+            class="intro__img"
+          />
 
-        <h1 class="intro__heading">
-          All your files in one secure location, accessible anywhere.
-        </h1>
+          <h1 class="intro__heading">
+            All your files in one secure location, accessible anywhere.
+          </h1>
 
-        <p class="intro__text">
-          Fylo stores all your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends
-          family, and co-workers.
-        </p>
+          <p class="intro__text">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
 
-        <a href="" class="btn btn--intro" onclick="showsomething()"
-          >Get Started</a
-        >
+          <a href="" class="btn btn--intro" onclick="showsomething()"
+            >Get Started</a
+          >
+        </div>
       </section>
       <section class="features">
         <div class="feature">
@@ -197,75 +199,91 @@
     </main>
     <footer>
       <div class="footer">
-        <img src="img/logo.svg" alt="fylo logo" class="footer__logo" />
-        <section class="contactinfo">
-          <div class="contactinfo__section">
-            <img
-              src="img/icon-location.svg"
-              alt="map tick icon"
-              class="contactinfo__icon"
-            />
-            <p class="contactinfo__section__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
+        <div class="footer__logo__container">
+          <img
+            src="img/logo.svg"
+            alt="fylo logo"
+            class="footer__logo__container__img"
+          />
+        </div>
+        <div class="footer__bigcontainer">
+          <div class="footer__container--tablet">
+            <div class="footer__container">
+              <section class="contactinfo">
+                <div class="contactinfo__section contactinfo__section--address">
+                  <img
+                    src="img/icon-location.svg"
+                    alt="map tick icon"
+                    class="contactinfo__icon"
+                  />
+                  <p class="contactinfo__section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua
+                  </p>
+                </div>
+                <div class="contactinfo__container">
+                  <div class="contactinfo__section">
+                    <img
+                      src="img/icon-phone.svg"
+                      alt="phone icon"
+                      class="contactinfo__icon"
+                    />
+                    <p class="contactinfo__section__text">+1-543-123-4567</p>
+                  </div>
+                  <div class="contactinfo__section">
+                    <img
+                      src="img/icon-email.svg"
+                      alt="email icon"
+                      class="contactinfo__icon"
+                    />
+                    <p class="contactinfo__section__text">example@fylo.com</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <nav class="nav nav--footer">
+              <ul class="nav__ul nav__ul--footer">
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">About Us</a>
+                </li>
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">Jobs</a>
+                </li>
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">Press</a>
+                </li>
+                <li class="nav__li--footer">
+                  <a href="" class="nav__item nav__item--footer">Blog</a>
+                </li>
+              </ul>
+              <ul class="nav__ul nav__ul--footer">
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">Contact Us</a>
+                </li>
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">Terms</a>
+                </li>
+                <li class="nav__li--footer">
+                  <a href="#" class="nav__item nav__item--footer">Privacy</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="contactinfo__section">
-            <img
-              src="img/icon-phone.svg"
-              alt="phone icon"
-              class="contactinfo__icon"
-            />
-            <p class="contactinfo__section__text">+1-543-123-4567</p>
-          </div>
-          <div class="contactinfo__section">
-            <img
-              src="img/icon-email.svg"
-              alt="email icon"
-              class="contactinfo__icon"
-            />
-            <p class="contactinfo__section__text">example@fylo.com</p>
-          </div>
-        </section>
-        <nav class="nav nav--footer">
-          <ul class="nav__ul nav__ul--footer">
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">About Us</a>
-            </li>
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">Jobs</a>
-            </li>
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">Press</a>
-            </li>
-            <li class="nav__li--footer">
-              <a href="" class="nav__item nav__item--footer">Blog</a>
-            </li>
-          </ul>
-          <ul class="nav__ul nav__ul--footer">
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">Contact Us</a>
-            </li>
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">Terms</a>
-            </li>
-            <li class="nav__li--footer">
-              <a href="#" class="nav__item nav__item--footer">Privacy</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="social">
-          <img src="img/fb.svg" alt="fb" />
-          <img src="img/twitter.svg" alt="twitter" />
-          <img src="img/instagram.svg" alt="ig" />
-        </section>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/bstrihova">bstrihova</a>.
-        </p>
+          <section class="social">
+            <img src="img/fb.svg" alt="fb" />
+            <img src="img/twitter.svg" alt="twitter" />
+            <img src="img/instagram.svg" alt="ig" />
+          </section>
+        </div>
       </div>
     </footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/bstrihova" target="_blank">bstrihova</a>.
+    </p>
   </body>
 </html>

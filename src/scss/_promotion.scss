@@ -4,9 +4,32 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 (2 * $padding);
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+  }
+
+  &__rightcolumn {
+    @media (min-width: $tablet) {
+      width: 40%;
+    }
+  }
 
   &__img {
     width: 100%;
+    align-self: center;
+
+    @media (min-width: $mobile) {
+      width: 80%;
+    }
+    @media (min-width: $tablet) {
+      width: 60%;
+      margin-right: 2 * $margin;
+      max-width: 800px;
+    }
   }
 
   &__text {

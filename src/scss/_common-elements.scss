@@ -9,18 +9,33 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 120%;
+  }
 }
 
 .earlyaccess,
 .features,
 header,
 footer,
-.intro,
 .promotion,
 .reviews {
-  // width: 100vw;
   margin: auto;
   padding: $padding;
+}
+
+.features,
+.promotion,
+.reviews,
+.earlyaccess,
+.footer {
+  @media (min-width: $mobile) {
+    width: 90%;
+  }
+  @media (min-width: $tablet) {
+    width: 70%;
+  }
 }
 
 h1,

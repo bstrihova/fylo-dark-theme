@@ -5,9 +5,30 @@
   background-size: 160%;
   background-repeat: no-repeat;
   background-position: bottom center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    background-size: 100%;
+
+    &__container {
+      width: 50%;
+      justify-self: center;
+      margin: auto;
+    }
+  }
 
   &__img {
     width: 100%;
+
+    @media (min-width: $mobile) {
+      width: 70%;
+    }
+    @media (min-width: $tablet) {
+      width: 100%;
+    }
   }
 
   &__text {
